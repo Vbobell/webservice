@@ -1,13 +1,26 @@
 {
-  "name": "node-mysql",
+  "name": "prestadorservico",
   "version": "0.0.1",
+  "description": "Webservice",
+  "engines": {
+    "node": "6.10.2"
+  },
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.10.6",
-    "mysql": "^2.5.4",
-    "request": "^2.80.0"
-  }
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vbobell/webservice"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
