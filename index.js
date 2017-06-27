@@ -11,4 +11,4 @@ var server = http.createServer(function (requisitado, resposta) {
 
     resposta.writeHead(200, {'Content-Type': 'text/plain'});
     resposta.end('Hello Node.JS!');
-}).listen(8080);
+}).listen(5000);
