@@ -9,6 +9,6 @@ var server = http.createServer(function (requisitado, resposta) {
 
     if (this.resultado.pathname == "/favicon.ico") { return }
 
-    resposta.write("Hello world");
-    resposta.end();
+    resposta.writeHead(200, {'Content-Type': 'text/plain'});
+    resposta.end('Hello Node.JS!');
 }).listen(8080);
