@@ -19,7 +19,7 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-pg.connect(conString, function(err, client, done) {
+/*pg.connect(conString, function(err, client, done) {
 
   if (err) {
     return console.error('error fetching client from pool', err);
@@ -33,7 +33,7 @@ pg.connect(conString, function(err, client, done) {
   });
 
 });
-
+*/
 
 
 
