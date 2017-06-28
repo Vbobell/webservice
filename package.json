@@ -12,7 +12,7 @@
   "dependencies": {
     "ejs": "2.5.6",
     "express": "4.15.2",
-    "ps":"6.4.0"
+    "ps":"0.0.2"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,7 @@
   "keywords": [
     "node",
     "heroku",
-    "express",
-    "postgres"
+    "express"
   ],
   "license": "MIT"
 }
