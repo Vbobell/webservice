@@ -1,5 +1,5 @@
 var express = require('express');
-var pg = require('pg');
+//var pg = require('pg');
 var conString = "postgres://szjrxhnyhfdvog:375e1eaae56772ecf7ba1b1ac4522552999b8f45458a4f99d6552da8a72221d4@ec2-107-22-250-33.compute-1.amazonaws.com:5432/d15ia3a4j471m";
 var app = express();
 
