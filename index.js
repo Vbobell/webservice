@@ -14,6 +14,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/data'), function(request, response){
+  response.render('teste');
+}
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
@@ -24,7 +28,7 @@ pool.connect( function(err, client, done) {
     return console.error('error fetching client from pool', err);
   }
   client.query('SELECT * from prestador', function(err, result) {
-    done();
+    //done();
     if (err) {
       return console.error('error running query', err);
     }
