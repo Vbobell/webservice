@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/data', function(request, response){
-  response.render('teste');
+  response.write('teste');
 });
 
 app.listen(app.get('port'), function() {
