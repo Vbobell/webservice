@@ -15,7 +15,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/data', function(request, response){
-  response.write('teste');
+  response.json({"teste":"123"});
 });
 
 app.listen(app.get('port'), function() {
