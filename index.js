@@ -25,7 +25,7 @@ app.get('/data', function(request, response){
     if (err) {
       return console.error('error running query', err);
     }
-    response.json(result);
+    response.json(result.rows);
   });
 
 });
