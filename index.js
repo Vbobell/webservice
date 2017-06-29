@@ -15,14 +15,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/data', function(request, response){
-  response.json({"teste":"123"});
-});
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-pool.connect( function(err, client, done) {
+  pool.connect( function(err, client, done) {
 
   if (err) {
     return console.error('error fetching client from pool', err);
@@ -32,10 +25,17 @@ pool.connect( function(err, client, done) {
     if (err) {
       return console.error('error running query', err);
     }
-    console.log(result);
+    response.json(result);
   });
 
 });
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+
 
  
 
