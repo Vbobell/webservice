@@ -23,8 +23,8 @@ app.get('/prestadoresServico', function(request, response){
   var querySearch = 'SELECT prestador.imagem, prestador.nome, prestador.profissao,';
       querySearch += 'endereco.cidade, endereco.bairro, endereco.endereco,';
       querySearch += 'contato.dddT, contato.telefone, contato.dddW, contato.whats, contato.email ';
-      querySearch += 'FROM prestador, endereco, contato';
-      querySearch += 'WHERE prestador.idPrestador = endereco.idPrestador';
+      querySearch += 'FROM prestador, endereco, contato ';
+      querySearch += 'WHERE prestador.idPrestador = endereco.idPrestador ';
       querySearch += 'AND prestador.idPrestador = contato.idPrestador';
 
   client.query(querySearch, function(err, result) {
