@@ -14,7 +14,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/meta', function(request, response) {
-  response.render('pages/meta.html');
+  response.render('pages/meta');
 });
 
 app.get('/prestadoresServico', function(request, response){
