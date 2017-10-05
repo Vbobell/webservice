@@ -13,6 +13,10 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/meta', function(request, response) {
+  response.render('pages/meta.html');
+});
+
 app.get('/prestadoresServico', function(request, response){
   pool.connect( function(err, client, done) {
 
